@@ -5,7 +5,5 @@
   "main": "index.js",
   "author": "Karthikeyan Palaniswamy",
   "license": "MIT",
-  "dependencies": {
-    "jQuery": "^1.7.4"
-  }
+  "dependencies": {}
 }
