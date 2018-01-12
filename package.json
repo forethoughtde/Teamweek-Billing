@@ -1,0 +1,11 @@
+{
+  "name": "Pricing",
+  "version": "1.0.0",
+  "description": "Pricing is a HTML template; it is inspired by https://app.teamweek.com/#settings/billing",
+  "main": "index.js",
+  "author": "Karthikeyan Palaniswamy",
+  "license": "MIT",
+  "dependencies": {
+    "jQuery": "^1.7.4"
+  }
+}
