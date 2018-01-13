@@ -114,3 +114,11 @@ button{
   line-height: 34px;
   border-radius: 2px;
 }
+
+.pricing_plans_btns{
+  display: inline-flex;
+
+  .pricing_plan--btn{
+    margin-right: 0.5rem;
+  }
+}
