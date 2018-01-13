@@ -104,3 +104,13 @@ button {
     margin-right: 0;
   }
 }
+
+button{
+  display: block;
+  width: 150px;
+  height: 34px;
+
+  margin: 0 auto;
+  line-height: 34px;
+  border-radius: 2px;
+}
