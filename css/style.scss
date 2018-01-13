@@ -120,6 +120,22 @@ button {
   border-radius: 0;
 }
 
+.bradius--bottom-left{
+  border-bottom-left-radius: 2px;
+}
+
+.bradius--bottom-right{
+  border-bottom-right-radius: 2px;
+}
+
+.bradius--top-left{
+  border-top-left-radius: 2px;
+}
+
+.bradius--top-right{
+  border-top-right-radius: 2px;
+}
+
 .pricing_plans_btns{
   display: inline-flex;
 
