@@ -105,20 +105,38 @@ button {
   }
 }
 
-button{
+.btn{
   display: block;
   width: 150px;
   height: 34px;
 
   margin: 0 auto;
-  line-height: 34px;
+  line-height: 20px;
   border-radius: 2px;
+}
+
+.btn--no_radius{
+  border-radius: 0;
 }
 
 .pricing_plans_btns{
   display: inline-flex;
 
   .pricing_plan--btn{
-    margin-right: 0.5rem;
+    border-width: 1px 0 1px 1px;
+    border-color: #0041ff;
+    border-style: solid;
+    color: #0041ff;
+    background: #ffffff;
+
+    &:last-child{
+      border-width: 1px 1px 1px 0;
+    }
+
+    &.active_plan{
+      color: #ffffff;
+      background-color: #0041ff;
+
+    }
   }
 }
