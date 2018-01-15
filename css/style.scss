@@ -99,6 +99,10 @@
     flex: 1 0 15%;
     margin-right: 2%;
 
+    .btn{
+        margin: pixel-to-rem(36px) auto;
+    }
+
     &:last-child {
         margin-right: 0;
     }
