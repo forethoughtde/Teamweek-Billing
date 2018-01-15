@@ -4,45 +4,6 @@
 @import "tabs";
 @import "badge";
 
-.active_plan {
-    background: $plan_active_btn;
-}
-
-.pricing_plan_box--image {
-    width: 100%;
-    height: pixel-to-rem(125px);
-    background-size: pixel-to-rem(46px) pixel-to-rem(68px);
-    background-position: 50%;
-    background-repeat: no-repeat;
-
-    margin-bottom: pixel-to-rem(45px);
-}
-
-.pricing_plan_box--image-0 {
-    background-image: url(https://d2bi6mljzi6nnj.cloudfront.net/images/billing/plan-5@2x.png);
-}
-
-.pricing_plan_box--image-1 {
-    background-image: url(https://d2bi6mljzi6nnj.cloudfront.net/images/billing/plan-10@2x.png);
-    background-size: pixel-to-rem(50px) pixel-to-rem(40px);
-}
-
-.pricing_plan_box--image-2 {
-    background-image: url(https://d2bi6mljzi6nnj.cloudfront.net/images/billing/plan-20@2x.png);
-    background-size: pixel-to-rem(56px) pixel-to-rem(100px);
-
-}
-
-.pricing_plan_box--image-3 {
-    background-image: url(https://d2bi6mljzi6nnj.cloudfront.net/images/billing/plan-40@2x.png);
-    background-size: pixel-to-rem(81px) pixel-to-rem(50px);
-}
-
-.pricing_plan_box--image-4 {
-    background-image: url(https://d2bi6mljzi6nnj.cloudfront.net/images/billing/plan-100@2x.png);
-    background-size: pixel-to-rem(120px) pixel-to-rem(55px);
-}
-
 .pricing_wrapper {
     padding: 1rem 3rem;
     .price_yearly, .pricing_plan_box--billed {
@@ -54,7 +15,16 @@
     }
 }
 
+.active_plan {
+    background: $plan_active_btn;
+}
+
+/* START
+YEARLY PLAN Context
+*/
+
 .pricing_yearly_plan {
+
     .price_monthly {
         display: none;
     }
@@ -68,6 +38,11 @@
     }
 }
 
+/* END
+YEARLY PLAN Context
+*/
+
+
 .pricing_plan_boxes {
     display: flex;
     justify-content: space-between;
@@ -75,20 +50,6 @@
     margin-top: pixel-to-rem(21px);
 }
 
-.pricing_plan_box--price {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-    .pricing_plan_box--price-cost {
-        font-size: 1.2rem;
-    }
-
-    p {
-        margin-bottom: pixel-to-rem(12px);
-    }
-
-}
 
 .pricing_plan_box {
     color: $color_grey;
@@ -99,8 +60,9 @@
     flex: 1 0 15%;
     margin-right: 2%;
 
-    .btn{
+    .btn {
         margin: pixel-to-rem(36px) auto;
+        color: $color_white;
     }
 
     &:last-child {
@@ -147,16 +109,74 @@
         }
     }
 
-    button {
-        font-family: 'Nunito Sans', sans-serif;
+    .btn {
         font-size: pixel-to-rem(13px);
         padding-left: pixel-to-rem(36px);
         padding-right: pixel-to-rem(36px);
-        height: pixel-to-rem(34px);
         line-height: 34px; //34px - 13px
         color: $color_white;
         background-color: $green_box;
     }
+}
+
+
+
+/* START
+Image in the Price plan box
+*/
+
+.pricing_plan_box--image {
+    width: 100%;
+    height: pixel-to-rem(125px);
+    background-size: pixel-to-rem(46px) pixel-to-rem(68px);
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+    margin-bottom: pixel-to-rem(45px);
+}
+
+.pricing_plan_box--image-0 {
+    background-image: url(https://d2bi6mljzi6nnj.cloudfront.net/images/billing/plan-5@2x.png);
+}
+
+.pricing_plan_box--image-1 {
+    background-image: url(https://d2bi6mljzi6nnj.cloudfront.net/images/billing/plan-10@2x.png);
+    background-size: pixel-to-rem(50px) pixel-to-rem(40px);
+}
+
+.pricing_plan_box--image-2 {
+    background-image: url(https://d2bi6mljzi6nnj.cloudfront.net/images/billing/plan-20@2x.png);
+    background-size: pixel-to-rem(56px) pixel-to-rem(100px);
+
+}
+
+.pricing_plan_box--image-3 {
+    background-image: url(https://d2bi6mljzi6nnj.cloudfront.net/images/billing/plan-40@2x.png);
+    background-size: pixel-to-rem(81px) pixel-to-rem(50px);
+}
+
+.pricing_plan_box--image-4 {
+    background-image: url(https://d2bi6mljzi6nnj.cloudfront.net/images/billing/plan-100@2x.png);
+    background-size: pixel-to-rem(120px) pixel-to-rem(55px);
+}
+
+/* END
+Image in the Price plan box
+*/
+
+.pricing_plan_box--price {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .pricing_plan_box--price-cost {
+        font-size: 1.2rem;
+    }
+
+    p {
+        margin-bottom: pixel-to-rem(12px);
+    }
+
 }
 
 .pricing_plan_box--feature {
@@ -201,6 +221,7 @@
 }
 
 .pricing_border--red {
+
     &.pricing_plan_box--active {
         border: 1px solid $red_box;
 
@@ -209,8 +230,7 @@
         }
     }
 
-    button {
-        color: $color_white;
+    .btn {
         background-color: $red_box;
     }
 
@@ -232,8 +252,7 @@
         }
     }
 
-    button {
-        color: $color_white;
+    .btn {
         background-color: $orange_box;
     }
 
@@ -263,8 +282,7 @@
         }
     }
 
-    button {
-        color: $color_white;
+    .btn {
         background-color: $blue_box;
     }
 
@@ -286,8 +304,7 @@
         }
     }
 
-    button {
-        color: $color_white;
+    .btn {
         background-color: $green_box;
     }
 
@@ -300,17 +317,11 @@
     }
 }
 
-.pricing_color--black {
-    color: $color_black;
-}
-
-.pricing_footer--note {
-    color: $color_grey;
-}
 
 .pricing_footer {
     margin-top: pixel-to-rem(24px);
     padding: 0rem 4rem;
+    color: $color_grey;
 
     display: flex;
     justify-content: space-between;
@@ -324,4 +335,8 @@
         color: $blue_box;
         text-decoration: underline;
     }
+}
+
+.pricing_color--black {
+    color: $color_black;
 }
