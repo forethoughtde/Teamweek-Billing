@@ -14,4 +14,6 @@
 
   border: pixel-to-rem(2px) solid $color_white;
   border-radius: pixel-to-rem(100px);
+
+  cursor: pointer;
 }
