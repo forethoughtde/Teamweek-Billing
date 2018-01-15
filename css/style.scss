@@ -70,6 +70,8 @@
 .pricing_plan_boxes {
     display: flex;
     justify-content: space-between;
+
+    margin-top: pixel-to-rem(21px);
 }
 
 .pricing_plan_box--price {
@@ -284,5 +286,6 @@
 
 .pricing_notes{
     margin-left: 4rem;
+    margin-top: pixel-to-rem(24px);
     color: $color_grey;
 }
