@@ -104,11 +104,53 @@
 }
 
 .pricing_head{
+    display: flex;
+    align-items: center;
     margin-left: 4rem;
 
     font-size: pixel-to-rem(16px);
 
     margin-bottom: pixel-to-rem(21px);
+
+    .pricing_head_title{
+        flex-grow: 1;
+    }
+
+    .pricing_payment_history{
+        position: relative;
+        font-size: pixel-to-rem(13px);
+        color: $color_grey;
+        cursor: pointer;
+
+        margin-right: pixel-to-rem(21px);
+
+        &:before{
+            content: url("../img/payment.svg");
+
+            position: absolute;
+            left: -21px;
+            display: block;
+            width: pixel-to-rem(16px);
+            height: pixel-to-rem(16px);
+
+            margin-right: pixel-to-rem(5px);
+        }
+
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+
+    button{
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: pixel-to-rem(13px);
+        padding-left: pixel-to-rem(36px);
+        padding-right: pixel-to-rem(36px);
+        height: pixel-to-rem(34px);
+        line-height: 34px; //34px - 13px
+        color: $color_white;
+        background-color: $green_box;
+    }
 }
 
 .pricing_plans_btns {
