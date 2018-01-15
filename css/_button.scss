@@ -17,6 +17,8 @@ button {
     line-height: pixel-to-rem(20px); //font-size + (height - font-size)
     border-radius: pixel-to-rem(2px);
 
+    cursor: pointer;
+
     &:hover {
         opacity: 0.7;
     }
