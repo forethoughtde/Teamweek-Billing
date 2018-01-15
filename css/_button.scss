@@ -1,0 +1,38 @@
+@import "functions";
+button {
+  font-size: pixel-to-rem(14px);
+  border: none;
+  outline: none;
+}
+
+.btn{
+  display: block;
+  width: pixel-to-rem(150px);
+  height: pixel-to-rem(34px);
+
+  position: relative;
+
+  margin: 0 auto;
+  line-height: pixel-to-rem(20px); //font-size + (height - font-size)
+  border-radius: pixel-to-rem(2px);
+}
+
+.btn--no_radius{
+  border-radius: 0;
+}
+
+.bradius--bottom-left{
+  border-bottom-left-radius: pixel-to-rem(2px);
+}
+
+.bradius--bottom-right{
+  border-bottom-right-radius: pixel-to-rem(2px);
+}
+
+.bradius--top-left{
+  border-top-left-radius: pixel-to-rem(2px);
+}
+
+.bradius--top-right{
+  border-top-right-radius: pixel-to-rem(2px);
+}

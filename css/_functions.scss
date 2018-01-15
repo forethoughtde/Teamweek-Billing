@@ -1,0 +1,3 @@
+@function pixel-to-rem($pixel){
+  @return ($pixel / 14px)+rem; // 14 is the font size of the body
+}

@@ -1,0 +1,17 @@
+@import "functions";
+@import "colors";
+
+.pricing_badge{
+  position: absolute;
+
+  top: -75%;
+  right: -25%;
+
+  font-size: pixel-to-rem(11px);
+  padding: pixel-to-rem(6px) pixel-to-rem(12px);
+  color: $color_white;
+  background: $green_box;
+
+  border: pixel-to-rem(2px) solid $color_white;
+  border-radius: pixel-to-rem(100px);
+}
