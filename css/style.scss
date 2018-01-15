@@ -1,6 +1,7 @@
 @import "default";
-@import "button";
 @import "colors";
+@import "button";
+@import "tabs";
 @import "badge";
 
 .active_plan {
@@ -83,7 +84,7 @@
         font-size: 1.2rem;
     }
 
-    p{
+    p {
         margin-bottom: pixel-to-rem(12px);
     }
 
@@ -103,20 +104,21 @@
     }
 }
 
-.pricing_head{
+.pricing_head {
     display: flex;
     align-items: center;
     margin-left: 4rem;
+    margin-right: 4rem;
 
     font-size: pixel-to-rem(16px);
 
     margin-bottom: pixel-to-rem(21px);
 
-    .pricing_head_title{
+    .pricing_head_title {
         flex-grow: 1;
     }
 
-    .pricing_payment_history{
+    .pricing_payment_history {
         position: relative;
         font-size: pixel-to-rem(13px);
         color: $color_grey;
@@ -124,7 +126,7 @@
 
         margin-right: pixel-to-rem(21px);
 
-        &:before{
+        &:before {
             content: url("../img/payment.svg");
 
             position: absolute;
@@ -136,12 +138,12 @@
             margin-right: pixel-to-rem(5px);
         }
 
-        &:hover{
+        &:hover {
             opacity: 0.7;
         }
     }
 
-    button{
+    button {
         font-family: 'Nunito Sans', sans-serif;
         font-size: pixel-to-rem(13px);
         padding-left: pixel-to-rem(36px);
@@ -150,34 +152,6 @@
         line-height: 34px; //34px - 13px
         color: $color_white;
         background-color: $green_box;
-    }
-}
-
-.pricing_plans_btns {
-    display: inline-flex;
-    margin-left: 4rem;
-
-    .pricing_plan--btn {
-        margin: 0;
-        font-size: pixel-to-rem(13px);
-        border-width: pixel-to-rem(1px) 0 pixel-to-rem(1px) pixel-to-rem(1px);
-        border-color: $btn_blue;
-        border-style: solid;
-        color: $btn_blue;
-        background: $color_white;
-
-        &:last-child {
-            border-width: pixel-to-rem(1px) pixel-to-rem(1px) pixel-to-rem(1px) 0;
-        }
-
-        &.active_plan {
-            color: #ffffff;
-            background-color: $btn_blue;
-        }
-
-        &:hover {
-            opacity: 1;
-        }
     }
 }
 
@@ -190,7 +164,7 @@
     }
 }
 
-.pricing_plan_box_active {
+.pricing_plan_box--active {
     position: relative;
 
     &:before {
@@ -210,9 +184,9 @@
     }
 }
 
-.pricing_border_yellow {
+.pricing_border--yellow {
 
-    &.pricing_plan_box_active {
+    &.pricing_plan_box--active {
         border: 1px solid $yellow_box;
 
         &:before {
@@ -222,8 +196,8 @@
     background-color: $yellow_box__bg;
 }
 
-.pricing_border_red {
-    &.pricing_plan_box_active {
+.pricing_border--red {
+    &.pricing_plan_box--active {
         border: 1px solid $red_box;
 
         &:before {
@@ -245,8 +219,8 @@
     }
 }
 
-.pricing_border_orange {
-    &.pricing_plan_box_active {
+.pricing_border--orange {
+    &.pricing_plan_box--active {
         border: 1px solid $orange_box;
 
         &:before {
@@ -268,16 +242,16 @@
     }
 }
 
-.pricing_plan_box--feature-list{
+.pricing_plan_box--feature-list {
     margin: pixel-to-rem(9px) 0;
 
-    li:last-child{
+    li:last-child {
         margin-top: pixel-to-rem(3px);
     }
 }
 
-.pricing_border_blue {
-    &.pricing_plan_box_active {
+.pricing_border--blue {
+    &.pricing_plan_box--active {
         border: 1px solid $blue_box;
 
         &:before {
@@ -299,8 +273,8 @@
     }
 }
 
-.pricing_border_green {
-    &.pricing_plan_box_active {
+.pricing_border--green {
+    &.pricing_plan_box--active {
         border: 1px solid $green_box;
 
         &:before {
@@ -322,12 +296,28 @@
     }
 }
 
-.pricing_color_black {
+.pricing_color--black {
     color: $color_black;
 }
 
-.pricing_notes{
-    margin-left: 4rem;
-    margin-top: pixel-to-rem(24px);
+.pricing_footer--note {
     color: $color_grey;
+}
+
+.pricing_footer {
+    margin-top: pixel-to-rem(24px);
+    padding: 0rem 4rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    .pricing_footer--contact {
+        color: $color_grey;
+        text-align: right;
+    }
+
+    .pricing_footer--contact-link {
+        color: $blue_box;
+        text-decoration: underline;
+    }
 }
