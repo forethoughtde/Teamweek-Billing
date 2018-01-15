@@ -224,6 +224,14 @@
     }
 }
 
+.pricing_plan_box--feature-list{
+    margin: pixel-to-rem(9px) 0;
+
+    li:last-child{
+        margin-top: pixel-to-rem(3px);
+    }
+}
+
 .pricing_border_blue {
     &.pricing_plan_box_active {
         border: 1px solid $blue_box;
