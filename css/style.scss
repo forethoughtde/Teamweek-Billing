@@ -206,6 +206,11 @@ Image in the Price plan box
 
         border-radius: 100%;
     }
+
+    .btn{
+        font-weight: bold;
+    }
+
 }
 
 .pricing_border--yellow {
@@ -216,8 +221,17 @@ Image in the Price plan box
         &:before {
             background-color: $yellow_box;
         }
+
+        .btn {
+            color: $yellow_box;
+            background-color: rgba(252,203,0,.1);;
+        }
     }
     background-color: $yellow_box__bg;
+
+    .btn {
+        background-color: $yellow_box__bg;
+    }
 }
 
 .pricing_border--red {
