@@ -27,7 +27,7 @@
                 </button>
             </div>
 
-            <div class="pricing_plans_tabs">
+            <div class="pricing_tabs pricing_pricing_tabs">
                 <button class="tab pricing_plans_tabs--tab active_tab">
                     Paid Monthly
                 </button>
@@ -69,7 +69,7 @@
                             Team up to <span class="pricing_color--black">10 people</span>
                         </p>
                     </div>
-                    <button class="btn">Start 14 Days Trial</button>
+                    <button class="btn payment_modal_open">Start 14 Days Trial</button>
                     <div class="pricing_plan_box--feature">
                         <p>Premium Features:</p>
                         <div class="pricing_plan_box--feature-list">
@@ -92,7 +92,7 @@
                             Team up to <span class="pricing_color--black">20 people</span>
                         </p>
                     </div>
-                    <button class="btn">Start 14 Days Trial</button>
+                    <button class="btn payment_modal_open">Start 14 Days Trial</button>
                     <div class="pricing_plan_box--feature">
                         <p>Premium Features:</p>
                         <div class="pricing_plan_box--feature-list">
@@ -115,7 +115,7 @@
                             Team up to <span class="pricing_color--black">40 people</span>
                         </p>
                     </div>
-                    <button class="btn">Start 14 Days Trial</button>
+                    <button class="btn payment_modal_open">Start 14 Days Trial</button>
                     <div class="pricing_plan_box--feature">
                         <p>Premium Features:</p>
                         <div class="pricing_plan_box--feature-list">
@@ -138,7 +138,7 @@
                             Team up to <span class="pricing_color--black">100 people</span>
                         </p>
                     </div>
-                    <button class="btn">Start 14 Days Trial</button>
+                    <button class="btn payment_modal_open">Start 14 Days Trial</button>
                     <div class="pricing_plan_box--feature">
                         <p>Premium Features:</p>
                         <div class="pricing_plan_box--feature-list">
@@ -168,11 +168,31 @@
 
     </div>
 
+    <div class="pricing_modal">
 
-    <script
-            src="//code.jquery.com/jquery-3.2.1.min.js"
-            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+        <div class="pricing_modal_container">
+
+            <div class="pricing_modal--content">
+
+                <div class="pricing_tabs pricing_modal_tabs">
+                    <button class="tab pricing_modal_tabs--tab active_tab">
+                        Payment Details
+                    </button>
+                    <button class="tab pricing_modal_tabs--tab">
+                        History
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js">
+    </script>
+    <script src="js/plan_tabs.js"></script>
+    <script src="js/payment_modal.js"></script>
 </body>
 </html>
