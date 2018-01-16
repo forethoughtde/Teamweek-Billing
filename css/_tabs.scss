@@ -1,4 +1,5 @@
 .tab {
+    //block element with width and height
     display: block;
     width: pixel-to-rem(150px);
     height: pixel-to-rem(34px);
@@ -7,7 +8,6 @@
 
     position: relative;
 
-    margin: pixel-to-rem(36px) auto;
     line-height: pixel-to-rem(20px); //font-size + (height - font-size)
 
     &:first-child {
