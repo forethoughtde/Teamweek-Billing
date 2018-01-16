@@ -1,14 +1,20 @@
 .tab {
     //block element with width and height
+    margin: 0;
+
     display: block;
     width: pixel-to-rem(150px);
     height: pixel-to-rem(34px);
+    font-size: pixel-to-rem(13px);
 
     cursor: pointer;
 
     position: relative;
 
-    line-height: pixel-to-rem(20px); //font-size + (height - font-size)
+    border-color: $btn_blue;
+    border-style: solid;
+    color: $btn_blue;
+    background: $color_white;
 
     &:first-child {
         border-width: pixel-to-rem(1px) 0 pixel-to-rem(1px) pixel-to-rem(1px);
@@ -21,24 +27,15 @@
         border-bottom-right-radius: pixel-to-rem(2px);
         border-width: pixel-to-rem(1px) pixel-to-rem(1px) pixel-to-rem(1px) 0;
     }
+
+    &.active_tab {
+        color: #ffffff;
+        background-color: $btn_blue;
+    }
 }
 
-.pricing_plans_tabs {
+.pricing_tabs {
     display: inline-flex;
     margin-left: 4rem;
 
-    .pricing_plans_tabs--tab {
-        margin: 0;
-        font-size: pixel-to-rem(13px);
-        border-color: $btn_blue;
-        border-style: solid;
-        color: $btn_blue;
-        background: $color_white;
-
-        &.active_tab {
-            color: #ffffff;
-            background-color: $btn_blue;
-        }
-
-    }
 }
