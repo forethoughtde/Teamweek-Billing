@@ -20,5 +20,14 @@ a {
 }
 
 input, select, textarea, button {
+    outline: none;
     font-family: inherit;
+    border: none;
+
+    font-size: pixel-to-rem(13px);
+    background-color: #f8f8f8;
+}
+
+label{
+    color: rgba(0,0,0,.35);
 }
