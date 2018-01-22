@@ -1,15 +1,14 @@
-(function(){
-
-    var ACTIVE_MENU_CLASS = "active_tab";
-    var $plan_tabs = $('.tab');
-    var $pricing_wrapper = $('.pricing_wrapper');
-    var YEARLY_PLAN_CLASS = 'pricing_yearly_plan';
+export default function switchTab() {
+    const ACTIVE_MENU_CLASS = "active_tab";
+    let $plan_tabs = $('.tab');
+    let $pricing_wrapper = $('.pricing_wrapper');
+    const YEARLY_PLAN_CLASS = 'pricing_yearly_plan';
 
     function switchTab($clickElement, $context){
         if ($clickElement.hasClass(ACTIVE_MENU_CLASS)) {
             return;
         }
-        var activeTab = $('.' + ACTIVE_MENU_CLASS);
+        let activeTab = $('.' + ACTIVE_MENU_CLASS);
         $($context[0]).find(activeTab).removeClass(ACTIVE_MENU_CLASS);
         $clickElement.addClass(ACTIVE_MENU_CLASS);
 
@@ -29,10 +28,13 @@
         }
     }
 
-
     $plan_tabs.click(function(){
-        var $clickElement = $(this);
+        let $clickElement = $(this);
         switchTab($clickElement, $clickElement.parent());
     });
+}
 
-})();
+
+
+
+
