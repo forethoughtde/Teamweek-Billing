@@ -36,6 +36,18 @@
 
 .pricing_tabs {
     display: inline-flex;
-    margin-left: 4rem;
+}
 
+.pricing_pricing_tabs {
+    margin-left: 4rem;
+}
+
+.pricing_modal_tabs {
+    margin-bottom: pixel-to-rem(12px);
+}
+
+.pricing_modal_tabs--tab-small {
+    width: pixel-to-rem(100px);
+    height: pixel-to-rem(22px);
+    font-size: pixel-to-rem(12px);
 }

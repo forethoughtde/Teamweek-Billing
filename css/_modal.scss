@@ -29,3 +29,36 @@
     padding: pixel-to-rem(12px);
 
 }
+
+.pricing_modal--content-body{
+    display: flex;
+
+    .pricing_credit_card{
+        display: flex;
+        flex-direction: column;
+
+        .pricing_credit_card--head{
+            margin-bottom: pixel-to-rem(21px);
+        }
+    }
+}
+
+.pricing_credit_card--fields--field{
+    font-size: pixel-to-rem(13px);
+
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+
+    padding: 10px 0 10px 10px;
+
+    label{
+        padding: 1px 5px 0 0;
+    }
+
+    margin-bottom: pixel-to-rem(12px);
+}
+
+.pricing_personal_details{
+    padding-left: pixel-to-rem(12px);
+}
