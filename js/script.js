@@ -1,6 +1,5 @@
-import switchTab from './tabs';
-import paymentModal from './payment_modal';
+import switchTabHome from "./tabs";
+import paymentModal from "./payment_modal";
 
-
-switchTab();
-paymentModal();
+switchTabHome ();
+paymentModal ();
