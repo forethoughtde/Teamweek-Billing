@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 const config = {
     entry: './js/script.js',
@@ -9,6 +10,7 @@ const config = {
         rules: [
             {
                 test: /\.js$/,
+                exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
                     options: {
@@ -17,7 +19,14 @@ const config = {
                 }
             }
         ]
-    }
+    },
+    plugins: [
+        new UglifyJsPlugin(),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        })
+    ]
 };
 
 
