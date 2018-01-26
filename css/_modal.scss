@@ -45,6 +45,7 @@
 
 .pricing_credit_card--fields--field{
     font-size: pixel-to-rem(13px);
+    height: pixel-to-rem(19px);
 
     display: flex;
     align-items: center;
@@ -61,4 +62,19 @@
 
 .pricing_personal_details{
     padding-left: pixel-to-rem(12px);
+
+    .pricing_credit_card--fields--customer-name{
+        display: none;
+    }
+
+    &.pricing_personal{
+        .pricing_credit_card--fields--company-name{
+            display: none;
+        };
+
+        .pricing_credit_card--fields--customer-name{
+            display: block;
+        }
+    }
+
 }
